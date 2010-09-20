@@ -30,7 +30,7 @@ module BistroCar
     end
 
     def render_cs_bundle_bundled(bundle)
-      content_tag(:script, '', :src => bundle.javascript_url, :type => 'text/javascript', :charset => 'utf-8')
+      javascript_include_tag bundle.asset_url
     end
 
     def render_cs_bundle_inline(bundle)

@@ -18,6 +18,10 @@ module BistroCar
       "/javascripts/bundle/#{name}.js"
     end
 
+    def asset_url
+      "bundle/#{name}.js"
+    end
+
   private
 
     def minify(javascript)
